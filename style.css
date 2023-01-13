@@ -1,0 +1,714 @@
+@font-face{
+    font-family: 'Raleway';
+    src: url('font/FontAwesome.otf');
+}
+body {
+    background: #fff;
+    color: #3f3f3f;
+    font: 14px / 28px Arial;
+    font-family:'Raleway';
+}
+  h1 {
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+  }
+  .sectionHeader {
+    background: #000;
+    border-bottom: 6px solid rgb(223, 14, 14);
+    height: 60px;
+    color: #fff;
+    display:inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+  }
+  h3 {
+    font-size: 16px;
+    color: #000;
+  }
+  .sectionArea {
+    padding: 80px 0px;
+  }
+
+
+
+ /* grid*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.featuresBody .container  {
+    justify-content: space-between;
+}
+.col3 {
+flex-grow: 1;
+width: 33.33%;
+}
+.enginebody .container {
+    justify-content: space-between;
+}
+.col2 {
+    flex-grow: 1;
+    width: 50%;
+    padding: 20px;
+
+}
+
+
+   /* ana sayfa settıngs*/
+header .logo {
+    margin-right: auto;
+    
+  
+}
+header .logo img {
+    display: grid;
+   height: 130px;
+}
+.menu li {
+    float: left;
+
+}
+.menu li a {
+    padding: 27px 17px;
+    display: grid;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    transition: all.5sn ease;
+    
+}
+
+.menu li:hover a {
+    background: rgb(231, 0, 0);
+    color: #000;
+}
+#mainSlider {
+    height: 550px;
+    background: url('image/anasayfa-foto.jpg') center center no-repeat;
+    background-size: cover;
+}
+.Slider {
+    width: 100%;
+}
+#mainCoption {
+    height: 550px; 
+    background: rgba(0,0,0, .5);
+}
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+}
+.featuresTop {
+    text-align: center;
+}
+.item {
+    padding: 10px 20px;
+}
+.zoom {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+.zoom img {
+    display:grid;
+    width: 100%;
+    height: auto;
+    transition: all .5sn ease;
+}
+.item .itemtext {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000;
+}
+.item:hover .zoom img {
+    transform:scale(1.25);
+}
+.item:hover h3 {
+    color: #fff;
+}
+.item:hover .itemtext {
+    background: #000;
+    color: #fff;
+    transition: all .5sn ease;
+}
+
+.btnDetails {
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #000;
+    transition: all .5sn ease;
+}
+.item:hover .btnDetails {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.itemtext p {
+    margin: 20px 0;
+}
+#parallax {
+ background: linear-gradient( 
+                    rgba( 0,0,0,.7),
+                    rgba( 0,0,0.7)
+                      ),
+                 url('image/parallax.jpg') ;    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center ;
+    text-align: center;  
+}
+#parallax p {
+    color: #fff;
+}
+.engineTop {
+    text-align: center;
+}
+.enginecontainer {
+    position: relative;
+    width: 100%;
+}
+.imageOver {
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+.engineOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.17);
+    overflow: hidden;
+    width:0;
+    height: 100%;
+    transition: .5s ease;
+}
+.enginecontainer:hover .engineOverlay {
+    width: 100%;
+}
+.enginetext {
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.engineOverlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.17);
+    overflow: hidden;
+    width:0;
+    height: 100%;
+    transition: .5s ease;
+}
+.enginecontainer:hover .engineOverlay2 {
+    width: 100%;
+    left: 0;
+}
+footer {
+ background-color: #000;
+ text-align: center;    
+}
+
+.footerItem {
+    padding: 20px;
+}
+
+.footerItem img {
+    height: 100px;
+
+}
+footer h3 {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.sociallinks {
+    font-size: 30px;
+    color: #95a5a6  ;
+    line-height: 50px;
+    transition: .3s ease;
+}
+.sociallinks a:hover {
+    color: #fff;
+}
+footer p {
+ color: #fff;
+ line-height: 20px;
+}
+ 
+
+.footerlink a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: .3s ease;
+}
+.footerlink a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+.sociallinks li {
+    display:inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+                /* OTOMOBİL */
+
+
+
+
+                     
+#carsSlider {
+    height: 250px;
+    background: url('image/anasayfa1.jpg') center center no-repeat;
+    background-size: cover;
+}
+.Slider {
+    width: 100%;
+}
+#carsCoption {
+    height: 250px; 
+    background: rgba(0,0,0, .7);
+}
+#inspect {
+    background-color: #f5f5f5;
+}
+.inspectTop {
+    text-align: center;
+}
+.inspectBody .col2 {
+    display: flex;
+}
+.inspectImage {
+    width: 40%;
+}
+.inspectImage img {
+    width: 100%;
+    height: auto;
+}
+.inspectText {
+    width: 60%;
+    padding-left: 10px;
+   
+}
+.date {
+    color: #333;
+    font-size: 12px;
+    font-style: italic;
+}
+h4 {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight:bold ;
+}
+.inspectText a {
+    float: right;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.inspectText a:hover {
+    text-decoration:underline;
+}
+.projectXTop {
+    text-align: center;
+}
+
+#projectX .containerFluid {
+    height: 500px;
+    background: url('image/anasayfa2.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.captionpx {
+    display: flex;
+    background: rgba(0,0,0, .7);
+    width: 100%;
+    height: 500px;
+}
+.projectXInfo {
+     position: relative;
+     top: 50%;
+     left: 50%;
+     margin-left: 5%;
+     padding-right: 5%;
+     transform: translate(-50%, -50%);
+   
+}
+.projectXtitle {
+    font-size:24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.projectBTN {
+    background-color: rgb(238, 0, 0);
+    cursor:pointer ;
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    border: none;
+    margin-top: 20px;
+    transition: all .5s ease;
+}
+.projectBTN:hover {
+    background-color: #fff;
+    color: rgb(238, 0, 0) ;
+    
+}
+.projectXText {
+ color: #fff;
+}
+.projectXHighlight {
+    display: inline-block;
+    background-color:rgb(238, 0, 0) ;
+    padding: 30px;
+
+}
+.containerFluid .col2 {
+    padding: 0;
+}
+.projectXDetail {
+    color: #fff;
+}
+
+
+
+
+          /* ABOUT */
+
+ #aboutSlider {
+    height: 250px;
+    background: url('image/hakfoto.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#aboutCoption {
+    height: 250px; 
+    background: rgba(0,0,0, .7);
+}
+
+
+#ourHistory {
+    background-color: #f5f5f5;
+} 
+.ourHistoryTop {
+    text-align: center;
+}
+.ourHistoryBody .containerFluid {
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+
+}
+.ourHistoryBody .col2 {
+    display: flex;
+}
+
+.ourHistoryDate {
+    flex: 1;
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+.ourHistoryDate p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ourHistoryText {
+    flex: 3;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.ourHistoryText p { 
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.teamTop {
+    text-align: center;
+}
+ .teamBody .containerFluid {
+    display:flex ;
+    width: 100%;
+}    
+.teamNember {
+    position: relative;
+    width: 100%;
+}
+.teamNemberImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.teamMemberOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 2;
+    background-color: #000;
+    transition: .5s ease;
+
+}
+.teamNember:hover .teamMemberOverlay {
+    opacity: 0;
+}
+.teamNember:hover .teamNemberInfo {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.teamTitle {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.teamNemberInfo {
+    color: #fff;
+    background-color: rgba( 80,13,22, .7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    transition: .5s ease;
+    padding: 20px;
+    text-align: center;
+
+}
+.nemberSocialLinks li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nemberSocialLinks .fa {
+    color: #fff;
+}
+
+
+/* CONTCAT */
+
+#contcatSlider {
+    height: 250px;
+    background: url('image/iletişimfoto.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#contcatCoption {
+    height: 250px; 
+    background: rgba(0,0,0, .7);
+}
+#gallery{
+    background-color: #f5f5f5;
+
+}
+.galleryTop {
+    text-align: center;
+
+}
+.gallerySlider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.gallerySliderItem {
+    width: 300%;
+    position: relative;
+    left: 0;
+    animation: slideAnimation 30s infinite;
+}
+.gallerySliderItem img {
+    width: 33.33%;
+    float: left;
+    height: auto;
+}
+@keyframes slideAnimation {
+    0%{ left: 0; }
+    25%{ left: -100%; }
+    50%{ left: -200%; }
+    70%{ left: -100%; }
+    100%{ left: 0; } 
+}
+.contactTop {
+    text-align: center;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+.contactForm {
+    margin: 0 auto;
+    width: 70%;
+}
+.formItem {
+    margin: bottom 10px;
+    width: 100%;
+}
+.formShape {
+    color: #fff;
+    float: left;
+    background: #000;
+    padding: 8px;
+    width: 8%;
+    text-align: center;
+}
+.formFluid {
+    color: rgb(247, 247, 247);
+    background: #000;
+    border: none;
+    padding: 15.5px;
+    width: 92%;
+    display: block;
+    font-size: 14px;
+}
+.formBtn {
+    display: block;
+    border: none;
+    background: #000;
+    color: rgb(247, 247, 247);
+    padding: 12px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: bold;
+}
+.formBtn:hover {
+    background: #e60000;
+
+}
+
+
+/* MEDİA */
+
+@media screen and ( max-width:960px) {
+    .coption h1 {
+      
+        font-size:32px;
+        letter-spacing: 2px;
+    }
+    footer .fa {
+       font-size: 24px;
+     
+    }
+    footer h3 {
+        font-size: 16px;
+    }
+     .inspectBody .container {
+        flex-direction: column;
+     }
+     .inspectBody .container .col2 {
+        width: 100%;
+     }
+     .ourHistoryBody .col2 {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+     }
+}
+@media screen and ( max-width:720px) {
+     header .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     header .logo {
+        margin: 0 auto;
+     }
+    
+    
+    .coption h1 {
+        font-size:28px;
+        letter-spacing: 2px
+    }
+    .featuresBody .container {
+        flex-direction:column ;
+    }
+    .featuresBody .container .col3 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .enginebody .container {
+        flex-direction: column;
+    }
+    .enginebody .container .col2 {
+        width: 80%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .col2 {
+        width: 100%;
+    }
+     .sectionHeader{
+        font-size: 24px;
+     }
+     .inspectBody .container .col2 {
+        padding-left: 0;
+        padding-right: 0;
+
+     }.teamNemberInfo {
+        font-size: 14px;
+        padding: 10px;
+     }
+     .teamTitle {
+        font-size:14px;
+     }
+     .formShape {
+        display: none;
+     }
+}
+@media screen and ( max-width:540px) {
+    .coption h1 {
+        font-size:20px;
+        letter-spacing:0;
+    }
+    .featuresBody .container .col3 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .enginebody .container .col2 {
+        width: 100%;
+    }
+    .sectionHeader {
+        font-size: 20px;
+    }
+    .contactForm {
+        width: 80%;
+    }
+        
+       
+}
